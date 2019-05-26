@@ -8,7 +8,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/sketchy/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LlPOZK7jvvPEMrrhdqVlEYmX2u/GWKdcq/p7wuVYAUladqNeK7VN1PUZQDmiqlql" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
@@ -25,19 +25,6 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
                 </li>
 
         </div>
@@ -79,7 +66,8 @@
     <div id="leetAlgo" class="container  text-center">
         <h1 class="display-3">Challenges on DS & Algorithms.</h1>
         <hr>
-        <div>
+        <button onclick="codeChallengesInitiator(this)" class="btn btn-large start"><span class="display-4">Start Challenge</span></button>
+        <div id="timeRem" class="time-remaining">
             <h3>Time remaining:</h3>
             <div id="clockdiv"></div>
         </div>

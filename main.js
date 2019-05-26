@@ -36,7 +36,7 @@ var searchFor = function search(){
         document.getElementById('qList').classList.add('hide-display');
         document.getElementById('videoBox').classList.add('hide-display');
         document.getElementById('searchBox').value = "";
-        document.getElementById('searchBox').placeholder = 'Enter a valid input!';
+        document.getElementById('searchBox').placeholder = 'Sorry! Topic not available rn.';
 
         //console.log(document.getElementById('qList'));
     });
@@ -71,16 +71,19 @@ function problemBoxCreator(problem){
 }
 
 
+document.getElementById('timeRem').classList.add('hide-display');
 
-function codeChallengesInitiator(){
+function codeChallengesInitiator(button){
+    
+    button.classList.add('fade-display')
 axios.get('https://cors-anywhere.herokuapp.com/https://leetcode.com/api/problems/algorithms/')
 .then(function(response){
-    run_clock('clockdiv',deadline);
-
-   // console.log(response);
-   //run_clock('clockdiv',new Date(current_time + time_in_minutes*60*1000));
+    button.classList.add('hide-display');
+    button.classList.remove('fade-display');
+    document.getElementById('timeRem').classList.toggle('hide-display');
     var leetAlgoContainer = document.getElementById('ques');
     ques.innerHTML = "";
+    run_clock('clockdiv',deadline);
     for(var i=0;i<2;i++){
 
         var index = Math.floor((Math.random()*1000)%996);
@@ -94,7 +97,7 @@ axios.get('https://cors-anywhere.herokuapp.com/https://leetcode.com/api/problems
 });
 }
 
-codeChallengesInitiator();
+//codeChallengesInitiator();
 
 function challengeCreator(challengeQues){
 

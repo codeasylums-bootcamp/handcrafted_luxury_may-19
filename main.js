@@ -1,9 +1,7 @@
 
 // var topic = 'data%20structures';
 
-var time_in_minutes = 45;
-var current_time = Date.parse(new Date());
-var deadline = new Date(current_time + time_in_minutes*60*1000);
+
 
 var searchFor = function search(){
     
@@ -79,10 +77,14 @@ function codeChallengesInitiator(button){
 
     axios.get('https://cors-anywhere.herokuapp.com/https://leetcode.com/api/problems/algorithms/')
     .then(function(response){
+
         button.classList.add('hide-display');
         button.classList.remove('fade-display');
         document.getElementById('timeRem').classList.toggle('hide-display');
         var leetAlgoContainer = document.getElementById('ques');
+        var time_in_minutes = 45;
+        var current_time = Date.parse(new Date());
+        var deadline = new Date(current_time + time_in_minutes*60*1000);
         ques.innerHTML = "";
         run_clock('clockdiv',deadline);
         for(var i=0;i<2;i++){

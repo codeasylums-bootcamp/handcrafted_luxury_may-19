@@ -8,7 +8,7 @@ var deadline = new Date(current_time + time_in_minutes*60*1000);
 var searchFor = function search(){
     
     var topic = document.getElementById('searchBox').value;
-    topic = getTag(topic);
+    topic = getTag(topic).toLowerCase();
     
     topic.replace(/ /g, '+');
     //console.log(topic);
@@ -76,28 +76,25 @@ document.getElementById('timeRem').classList.add('hide-display');
 function codeChallengesInitiator(button){
     
     button.classList.add('fade-display')
-axios.get('https://cors-anywhere.herokuapp.com/https://leetcode.com/api/problems/algorithms/')
-.then(function(response){
-    button.classList.add('hide-display');
-    button.classList.remove('fade-display');
-    document.getElementById('timeRem').classList.toggle('hide-display');
-    var leetAlgoContainer = document.getElementById('ques');
-    ques.innerHTML = "";
-    run_clock('clockdiv',deadline);
-    for(var i=0;i<2;i++){
 
-        var index = Math.floor((Math.random()*1000)%996);
-        
-       // console.log(index);
-       var challenge = challengeCreator(response.data.stat_status_pairs[index]);
-       leetAlgoContainer.appendChild(challenge);
-    }
+    axios.get('https://cors-anywhere.herokuapp.com/https://leetcode.com/api/problems/algorithms/')
+    .then(function(response){
+        button.classList.add('hide-display');
+        button.classList.remove('fade-display');
+        document.getElementById('timeRem').classList.toggle('hide-display');
+        var leetAlgoContainer = document.getElementById('ques');
+        ques.innerHTML = "";
+        run_clock('clockdiv',deadline);
+        for(var i=0;i<2;i++){
+            var index = Math.floor((Math.random()*1000)%996);
+            var challenge = challengeCreator(response.data.stat_status_pairs[index]);
+            leetAlgoContainer.appendChild(challenge);
+        }
 
-    //(Math.random()*10)%5
-});
+    });
 }
 
-//codeChallengesInitiator();
+
 
 function challengeCreator(challengeQues){
 
@@ -140,14 +137,6 @@ function getIFrame(videoId){
 
 }
 
-// axios.get(`https://cors-anywhere.herokuapp.com/https://problemclassifier.appspot.com/?keywords=${input}`)
-// .then(function(response){
-//     console.log(response);
-//     var data = response.data.match('<a href="http://www.spoj.pl/problems(.*)</a>');
-//     console.log(data);
-// })
-
-//clockDiv
 
 
 

@@ -170,3 +170,11 @@ i{
 .images img{
     border-radius: 4px;
 }
+
+.navbar ul{
+    float: right;
+}
+
+.form-control input{
+    font-size: 30px;
+}

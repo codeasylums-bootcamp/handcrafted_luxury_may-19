@@ -8,8 +8,9 @@
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/sketchy/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LlPOZK7jvvPEMrrhdqVlEYmX2u/GWKdcq/p7wuVYAUladqNeK7VN1PUZQDmiqlql" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
@@ -23,7 +24,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto ">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -35,12 +36,17 @@
     <div id="jumboCover" class="jumbotron head-wrapper">
 
         <h1 class="display-4">Hello, coder!</h1>
-        <p class="lead">We're here to provide you with challenging questions based on your query topic. Fasten your seat belts!</p>
+        <p class="lead">We're here to provide you with challenging questions based on your query topic. Fasten your
+            seat belts!</p>
         <hr>
         <input class="search-box" type="text" id="searchBox" placeholder="e.g. Trees, Binary Search, etc">
-        <a class="btn btn-primary btn-search btn-lg" href="#" onclick="searchFor()" role="button">Find problems!</a>
+        <a class="btn btn-primary btn-search btn-lg" href="#qList" onclick="searchFor()" role="button">Find problems!</a>
 
     </div>
+
+
+
+
 
     <!-- questions -->
     <div id="qList" class="question-list container hide-display">
@@ -53,7 +59,7 @@
         </ul>
     </div>
 
-
+    <hr>
     <!-- YouTube Video references -->
     <div id="videoBox" class="video-references container text-center">
 
@@ -63,27 +69,34 @@
     <!-- About us -->
     <div class="about-us container">
         <div class="content-heading text-center">
-            <h1 id="heading" class="display-3">About Us</h1>
+            <h1 class="display-3">About Us</h1>
             <hr>
         </div>
         <div class="content">
-            <p>At Programmers' Toolkit, we serve you as a compiler for your logical skills and providing test cases in the form of variety of Competitive Programming problems. An awesome collection of CodeForces' questions is a great way to tinker your grey cells with a splash of IQ and a dash to brilliance</p>
+            <p>At Programmers' Toolkit, we serve you as a compiler for your logical skills and providing test cases in
+                the form of variety of Competitive Programming problems. An awesome collection of CodeForces' questions
+                is a great way to tinker your grey cells with a splash of IQ and a dash to brilliance</p>
             <div class="images text-center">
                 <img src="https://www.sccpre.cat/mypng/detail/168-1688141_mac-laptop-cartoon-png-png-download-apple-laptop.png">
                 <img class="cflogo" src="https://www.stopstalk.com/stopstalk/static/images/codeforces_logo.png">
             </div>
-            <p>As a cherry on top we have daily challenges for you from a variety of handpicked questions from LeetCode to train you specifically on Data Structures and Algorithms. The 45 min - "2" question challenge will make you more time efficient and accurate.</p>
+            <p>As a cherry on top we have daily challenges for you from a variety of handpicked questions from LeetCode
+                to train you specifically on Data Structures and Algorithms. The 45 min - "2" question challenge will
+                make you more time efficient and accurate.</p>
             <div class="images text-center"><img src="https://assets.leetcode.com/static_assets/public/images/LeetCode_Sharing.png"></div>
             <p class="blockquote-footer mt-3"><cite title="Source Title">
-                'I hear and I forget. I see and I remember. I do and I understand.'</cite> We understand this statement. Hence, we bring video tutorials to you for the topics you search for.</p>
+                    'I hear and I forget. I see and I remember. I do and I understand.'</cite> We understand this
+                statement. Hence, we bring video tutorials to you for the topics you search for.</p>
         </div>
     </div>
+    <hr>
 
     <!-- Algo practice -->
     <div id="leetAlgo" class="container  text-center">
         <h1 class="display-3">Challenges on DS & Algorithms.</h1>
         <hr>
-        <button onclick="codeChallengesInitiator(this)" class="btn btn-large start"><span class="display-4">Start Challenge</span></button>
+        <button onclick="codeChallengesInitiator(this)" class="btn btn-large start"><span class="display-4">Start
+                Challenge</span></button>
         <div id="timeRem" class="time-remaining">
             <h3>Time remaining:</h3>
             <div id="clockdiv"></div>
@@ -94,34 +107,38 @@
         </div>
 
     </div>
-<!---contact form-->
-<br><br>
-<hr>
+    <!---contact form-->
+    <br><br>
+    <hr>
 
-    
-<div class="container contactus">
-    <div class="content-heading text-center">
-         <h1 id="heading" class="display-3">Contact Us</h1>
-         <hr>
+
+
+
+    <div class="container contactus">
+        <div class="content-heading text-center">
+            <h1 id="heading" class="display-3">Contact Us</h1>
+            <hr>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Full name</label>
+                <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter full name">
+            </div>
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="email" class="form-control" placeholder="Enter email here">
+            </div>
+
+            <div class="form-group">
+                <label for="">Message</label>
+                <textarea class="form-control" placeholder="Enter your message here"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
     </div>
-    <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Full name</label>
-    <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter full name">
-  </div>
-  <div class="form-group">
-    <label for="">Email</label>
-    <input type="email" class="form-control" placeholder="Enter email here">
-  </div>
 
-  <div class="form-group">
-    <label for="">Message</label>
-    <textarea class="form-control" placeholder="Enter your message here"></textarea>
-  </div>
- 
-  <button type="submit" class="btn btn-primary btn-block">Submit</button>
-</form>
-</div>
+
 
     <!-- footer -->
     <div class="footer jumbotron jumbotron-fluid">
@@ -146,4 +163,4 @@
     <script src="main.js"></script>
 </body>
 
-</html>s
+</html>

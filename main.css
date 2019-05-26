@@ -1,0 +1,105 @@
+.search-box{
+    width: 400px;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.btn-search{
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.list-box li{
+    display: inline-block;
+    border: 1px solid lightgray;
+    padding: 10px;
+    width: 400px;
+    
+    margin: 0 20px 20px 0;
+    font-size: 25px;
+}
+
+.hide-display{
+    display: none !important;
+}
+
+.show-display{
+    display: block;
+}
+
+.carousel-item{
+    height: 300px !important;
+}
+
+.challenge-cards{
+    
+    background-image: linear-gradient(to right, #000428,#004e92);
+    color: white;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+
+.challenge-cards:hover{
+    box-shadow: 0 25px 35px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+.chopped{
+    text-decoration: line-through;
+}
+
+.red{
+    color: red;
+}
+
+.footer{
+    background-image: linear-gradient(to right,#ed4264 , #ffedbc);
+}
+
+.text-white{
+    color: white;
+    opacity: 0.8;
+}
+
+.container{
+    margin-top: 100px;
+}
+
+iframe{
+    margin-right: 10px;
+}
+
+.navbar{
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#jumboCover{
+    background-image: url('https://static1.squarespace.com/static/5769fc401b631bab1addb2ab/t/5be2a8aeb8a0451f1d979f43/1541580981835/python-2.gif');
+    background-repeat: no-repeat;
+    background-size: 700px;
+    height: 450px;
+    background-position: right;
+    background-color: #F9F3ED;
+   
+}
+
+#jumboCover hr{
+    width: 400px;
+    margin: 10px 0px;
+}
+
+.disable-click{
+    pointer-events: none;
+    opacity: 0.7;
+}

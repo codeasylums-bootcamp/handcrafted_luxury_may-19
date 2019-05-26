@@ -35,8 +35,6 @@ var searchFor = function search(){
         document.getElementById('videoBox').classList.add('hide-display');
         document.getElementById('searchBox').value = "";
         document.getElementById('searchBox').placeholder = 'Sorry! Topic not available rn.';
-
-        //console.log(document.getElementById('qList'));
     });
 
 

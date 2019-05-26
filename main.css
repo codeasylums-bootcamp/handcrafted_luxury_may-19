@@ -160,4 +160,13 @@ i{
 
 .content p{
     font-size: 30px;
+    margin-top: 20px;
+}
+
+.images img{
+    height: 200px;
+}
+
+.images img{
+    border-radius: 4px;
 }

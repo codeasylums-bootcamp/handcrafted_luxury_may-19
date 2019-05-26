@@ -8,6 +8,6 @@ The website also hits the YouTube API for the the video tutorials for the topics
   
   
   
-  Team members- Ayush Raj(raj.ayush012), Deepak Kumar(realdeep), Gautam Kumar Singh(kinglord1), Naman Deep
+  Team members- Ayush Raj(raj.ayush012), Deepak Kumar(realdeep), Gautam Kumar Singh(younglord1), Naman Deep
   
   

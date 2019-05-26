@@ -8,6 +8,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/sketchy/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LlPOZK7jvvPEMrrhdqVlEYmX2u/GWKdcq/p7wuVYAUladqNeK7VN1PUZQDmiqlql" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
@@ -15,7 +16,7 @@
 <body>
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">PTK</a>
+        <a class="navbar-brand" href="#"><i class="fas fa-code-branch"></i>Programmers'ToolKit</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,7 +35,7 @@
     <div id="jumboCover" class="jumbotron head-wrapper">
 
         <h1 class="display-4">Hello, coder!</h1>
-        <p class="lead">We're here to search problems based on your query.</p>
+        <p class="lead">We're here to provide you with challenging questions based on your query topic. Fasten your seat belts!</p>
         <hr>
         <input class="search-box" type="text" id="searchBox" placeholder="e.g. Trees, Binary Search, etc">
         <a class="btn btn-primary btn-search btn-lg" href="#" onclick="searchFor()" role="button">Find problems!</a>
@@ -53,14 +54,22 @@
     </div>
 
 
-
-
     <!-- YouTube Video references -->
     <div id="videoBox" class="video-references container text-center">
 
 
     </div>
 
+    <!-- About us -->
+    <div class="about-us container">
+        <div class="content-heading text-center">
+            <h1 id="heading" class="display-3">About Us</h1>
+            <hr>
+        </div>
+        <div class="content">
+            <p>At Programmers' Toolkit, we serve you as a compiler for your logical skills and providing test cases in the form of variety of Competitive Programming problems. An awesome collection of CodeForces' questions is a great way to tinker your grey cells with a splash of IQ and a dash to brilliance</p>
+        </div>
+    </div>
 
     <!-- Algo practice -->
     <div id="leetAlgo" class="container  text-center">

@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Programmer's Tutorial Kit</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/sketchy/bootstrap.min.css" rel="stylesheet" integrity="sha384-LlPOZK7jvvPEMrrhdqVlEYmX2u/GWKdcq/p7wuVYAUladqNeK7VN1PUZQDmiqlql" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/sketchy/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LlPOZK7jvvPEMrrhdqVlEYmX2u/GWKdcq/p7wuVYAUladqNeK7VN1PUZQDmiqlql" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -44,28 +45,28 @@
 
     <!--Start of main/Intro and searchBox-->
     <div id="jumboCover" class="jumbotron head-wrapper">
-        
+
         <h1 class="display-4">Hello, coder!</h1>
         <p class="lead">We're here to search problems based on your query.</p>
         <hr>
         <input class="search-box" type="text" id="searchBox" placeholder="e.g. Trees, Binary Search, etc">
         <a class="btn btn-primary btn-search btn-lg" href="#" onclick="searchFor()" role="button">Find problems!</a>
-        
+
     </div>
 
     <!-- questions -->
     <div id="qList" class="question-list container hide-display">
-            <div class="content-heading text-center">
-                <p id="heading" class="display-3">Problems on</p>
-                <hr>
-            </div>
-            <ul class="list-box text-center" id="listBox">
+        <div class="content-heading text-center">
+            <p id="heading" class="display-3">Problems on</p>
+            <hr>
+        </div>
+        <ul class="list-box text-center" id="listBox">
 
-            </ul>     
+        </ul>
     </div>
 
 
-    
+
 
     <!-- YouTube Video references -->
     <div id="videoBox" class="video-references container text-center">
@@ -76,45 +77,68 @@
 
     <!-- Algo practice -->
     <div id="leetAlgo" class="container  text-center">
-            <h1 class="display-3">Challenges on DS & Algorithms.</h1>
-            <hr>
-            <div>
-                <h3>Time remaining:</h3><div id="clockdiv"></div>
-            </div>
+        <h1 class="display-3">Challenges on DS & Algorithms.</h1>
+        <hr>
+        <div>
+            <h3>Time remaining:</h3>
+            <div id="clockdiv"></div>
+        </div>
         <div id="ques" class="algo-practice ">
 
-        
-    </div>
+
+        </div>
 
     </div>
-
-            <div class="container jumbotron jumbotron-fluid">
-                <div class="container">
-                <h2 class="display-4">ABOUT US<span class="blue"></span></h2>
-                <p>PTK is a platform for assessing developer skills for over 1,000 companies around the world. By practicin g most relevant questions of any topic enabling tech recruiters and hiring managers to objectively evaluate talent at every stage of the recruiting process.</p>
-            </div>
-    
+<!---contact form-->
+<br><br>
+<hr>
 
     
+<div class="container contactus">
+    <div class="content-heading text-center">
+         <h1 id="heading" class="display-3">Contact Us</h1>
+         <hr>
+    </div>
+    <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Full name</label>
+    <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Enter full name">
+  </div>
+  <div class="form-group">
+    <label for="">Email</label>
+    <input type="email" class="form-control" placeholder="Enter email here">
+  </div>
+
+  <div class="form-group">
+    <label for="">Message</label>
+    <textarea class="form-control" placeholder="Enter your message here"></textarea>
+  </div>
+ 
+  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+</form>
+</div>
+
     <!-- footer -->
     <div class="footer jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1 class="display-4">EAT<span class="red">.</span><span class="chopped">SLEEP</span><span class="red">.</span>CODE<span class="red">.</span></h1>
-              <p class="lead">Keep coding, keep developing, keep growing.</p>
-              <footer class="text-white blockquote-footer">Someone not so famous from<cite title="Source Title"> &copy;Handcrafted_Luxury</cite></footer>
-            </div>
+        <div class="container">
+            <h1 class="display-4">EAT<span class="red">.</span><span class="chopped">SLEEP</span><span class="red">.</span>CODE<span
+                    class="red">.</span></h1>
+            <p class="lead">Keep coding, keep developing, keep growing.</p>
+            <footer class="text-white blockquote-footer">Someone not so famous from<cite title="Source Title">
+                    &copy;Handcrafted_Luxury</cite></footer>
+        </div>
     </div>
 
 
 
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 
-</html>
+</html>s

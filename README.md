@@ -9,6 +9,6 @@ The website also hits the YouTube API for the the video tutorials for the topics
   AWS Link - http://3.16.31.56/
   
   
-  Team members- Ayush Raj(raj.ayush012), Deepak Kumar(realdeep), Gautam Kumar Singh(kinglord1), Naman Deep
+  Team members- Ayush Raj(raj.ayush012), Deepak Kumar(realdeep), Gautam Kumar Singh(younglord1), Naman Deep
   
   
